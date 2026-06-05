@@ -32,7 +32,7 @@ tr:hover td{background:#F7FAFE;}
 .section-title{font-size:1rem;font-weight:700;color:#1A3A6B;margin:1.25rem 0 .5rem;border-left:4px solid #1A3A6B;padding-left:.5rem;}
 .legend{display:flex;gap:.75rem;flex-wrap:wrap;font-size:.7rem;color:#555;margin-bottom:.5rem;}
 .legend-dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:3px;}
-.game-grid{display:grid;grid-template-columns:repeat(21,1fr);gap:2px;margin-top:.5rem;}
+.game-grid{display:grid;grid-template-columns:repeat(23,1fr);gap:2px;margin-top:.5rem;}
 .game-box{border-radius:4px;padding:3px 2px;text-align:center;font-size:.6rem;font-weight:700;}
 .gw{background:#EAF3DE;color:#27500A;}
 .gl{background:#FCEBEB;color:#C0392B;}
@@ -44,21 +44,21 @@ tr:hover td{background:#F7FAFE;}
 </head>
 <body>
 <h1>&#x1F986; Wheatland Ducks 9U Wink &#x2014; 2025 Analytics Dashboard</h1>
-<div class="subtitle">21-Game Season &middot; Through Jun 1 &middot; Stats verified via app screenshots &amp; box score TB notes</div>
+<div class="subtitle">23-Game Season &middot; Through Jun 5 &middot; Stats verified via app screenshots &amp; box score TB notes</div>
 
 <div class="pills">
-  <div class="pill warn">Record: <b>7W&ndash;12L&ndash;2T</b></div>
-  <div class="pill blue">Team AVG: <b>.329</b></div>
-  <div class="pill blue">Team OBP: <b>.465</b></div>
-  <div class="pill blue">Team OPS: <b>.892</b></div>
-  <div class="pill blue">Team SB: <b>188 (95.4%)</b></div>
-  <div class="pill bad">Last 5: <b>0W&ndash;4L&ndash;1T (May 23&ndash;Jun 1)</b></div>
-  <div class="pill bad">L5 Runs Scored: <b>26 total (5.2/g)</b></div>
-  <div class="pill good">RS/Game G1&ndash;16: <b>9.0/game</b></div>
+  <div class="pill warn">Record: <b>8W&ndash;13L&ndash;2T</b></div>
+  <div class="pill blue">Team AVG: <b>.333</b></div>
+  <div class="pill blue">Team OBP: <b>.464</b></div>
+  <div class="pill blue">Team OPS: <b>.901</b></div>
+  <div class="pill blue">Team SB: <b>210 (95.5%)</b></div>
+  <div class="pill bad">Last 5: <b>1W&ndash;3L&ndash;1T (May 28&ndash;Jun 5)</b></div>
+  <div class="pill good">L5 Runs Scored: <b>44 total (8.8/g)</b></div>
+  <div class="pill good">RS/Game G1&ndash;18: <b>8.2/game</b></div>
 </div>
 
 <div class="card" style="margin-bottom:1rem;">
-  <div class="card-title">Game-by-Game Results (G1&ndash;G21)</div>
+  <div class="card-title">Game-by-Game Results (G1&ndash;G23)</div>
   <div class="game-grid">
     <div class="game-box gl">G1<br>L<br>4-10</div>
     <div class="game-box gt">G2<br>T<br>5-5</div>
@@ -81,6 +81,8 @@ tr:hover td{background:#F7FAFE;}
     <div class="game-box gl">G19<br>L<br>11-14</div>
     <div class="game-box gl">G20<br>L<br>4-11</div>
     <div class="game-box gt">G21<br>T<br>7-7</div>
+    <div class="game-box gw">G22<br>W<br>13-10</div>
+    <div class="game-box gl">G23<br>L<br>9-10</div>
   </div>
 </div>
 
@@ -105,7 +107,7 @@ tr:hover td{background:#F7FAFE;}
         <th class="left" rowspan="2" style="width:130px;">Player</th>
         <th colspan="4" style="background:#7A4A00;border-right:2px solid #fff;">&#x2014; &Delta; Change &#x2014;</th>
         <th colspan="4" style="background:#1A6B2A;border-right:2px solid #fff;">&#x2014; Last 5 Games &#x2014;</th>
-        <th colspan="4" style="background:#1A5276;">&#x2014; Full Season (21 G) &#x2014;</th>
+        <th colspan="4" style="background:#1A5276;">&#x2014; Full Season (23 G) &#x2014;</th>
       </tr>
       <tr>
         <th style="background:#7A4A00;width:52px;">AVG &Delta;</th>
@@ -159,7 +161,7 @@ tr:hover td{background:#F7FAFE;}
 </div>
 
 <!-- ── L5 TABLE ── -->
-<div class="section-title">Last 5 Games &mdash; Individual Breakdown (May 23&ndash;Jun 1) <span style="font-size:.75rem;font-weight:400;color:#888;">(sorted by OPS)</span></div>
+<div class="section-title">Last 5 Games &mdash; Individual Breakdown (May 28&ndash;Jun 5) <span style="font-size:.75rem;font-weight:400;color:#888;">(sorted by OPS)</span></div>
 <div class="card">
   <div style="overflow-x:auto;">
   <table style="table-layout:fixed;">
@@ -214,35 +216,35 @@ tr:hover td{background:#F7FAFE;}
 
 <script>
 const SEASON = [
-  {n:"H Kelly",    num:"#99",gp:21,pa:51,ab:42,avg:.476,obp:.569,ops:1.354,slg:.786,h:20,b2:8,b3:1,hr:1,rbi:15,r:20,bb:8, so:6, kl:1,hbp:1,sb:15,cs:1,bg:"#E6F1FB",fg:"#0C447C"},
-  {n:"C Davis",    num:"#5", gp:21,pa:53,ab:51,avg:.451,obp:.472,ops:1.060,slg:.588,h:23,b2:3,b3:2,hr:0,rbi:14,r:18,bb:2, so:7, kl:1,hbp:0,sb:20,cs:0,bg:"#E6F1FB",fg:"#0C447C"},
-  {n:"E Merkle",   num:"#8", gp:21,pa:53,ab:48,avg:.458,obp:.509,ops:1.134,slg:.625,h:22,b2:3,b3:1,hr:1,rbi:14,r:19,bb:3, so:4, kl:2,hbp:2,sb:17,cs:0,bg:"#E6F1FB",fg:"#0C447C"},
-  {n:"A Salkowski",num:"#17",gp:21,pa:52,ab:41,avg:.317,obp:.462,ops:.901, slg:.439,h:13,b2:2,b3:0,hr:1,rbi:13,r:19,bb:10,so:10,kl:7,hbp:1,sb:10,cs:0,bg:"#E6F1FB",fg:"#0C447C"},
-  {n:"R Wink",     num:"#10",gp:20,pa:44,ab:26,avg:.385,obp:.628,ops:1.013,slg:.385,h:10,b2:0,b3:0,hr:0,rbi:6, r:20,bb:16,so:4, kl:2,hbp:1,sb:33,cs:1,bg:"#EAF3DE",fg:"#27500A"},
-  {n:"V Fumo",     num:"#2", gp:18,pa:39,ab:27,avg:.333,obp:.513,ops:.957, slg:.444,h:9, b2:0,b3:0,hr:1,rbi:6, r:14,bb:10,so:7, kl:3,hbp:1,sb:17,cs:0,bg:"#EAF3DE",fg:"#27500A"},
-  {n:"C Payton",   num:"#7", gp:20,pa:41,ab:27,avg:.296,obp:.525,ops:.821, slg:.296,h:8, b2:0,b3:0,hr:0,rbi:6, r:14,bb:10,so:12,kl:3,hbp:3,sb:15,cs:1,bg:"#EAF3DE",fg:"#27500A"},
-  {n:"O Dozier",   num:"#4", gp:18,pa:40,ab:32,avg:.312,obp:.450,ops:.919, slg:.469,h:10,b2:2,b3:0,hr:1,rbi:6, r:8, bb:7, so:9, kl:4,hbp:1,sb:11,cs:2,bg:"#EAF3DE",fg:"#27500A"},
-  {n:"A Casmer",   num:"#12",gp:21,pa:44,ab:38,avg:.289,obp:.386,ops:.676, slg:.289,h:11,b2:0,b3:0,hr:0,rbi:8, r:12,bb:5, so:11,kl:3,hbp:1,sb:17,cs:0,bg:"#F1EFE8",fg:"#5A4A3A"},
-  {n:"A Wahi",     num:"#6", gp:19,pa:42,ab:28,avg:.214,obp:.476,ops:.726, slg:.250,h:6, b2:1,b3:0,hr:0,rbi:4, r:15,bb:12,so:9, kl:2,hbp:2,sb:21,cs:2,bg:"#F1EFE8",fg:"#5A4A3A"},
-  {n:"A Ginsberg", num:"#20",gp:20,pa:38,ab:31,avg:.161,obp:.316,ops:.477, slg:.161,h:5, b2:0,b3:0,hr:0,rbi:7, r:6, bb:5, so:15,kl:4,hbp:2,sb:5, cs:1,bg:"#F1EFE8",fg:"#5A4A3A"},
-  {n:"R Bellinder",num:"#1", gp:20,pa:41,ab:35,avg:.086,obp:.220,ops:.305, slg:.086,h:3, b2:0,b3:0,hr:0,rbi:6, r:5, bb:6, so:11,kl:4,hbp:0,sb:7, cs:1,bg:"#F1EFE8",fg:"#5A4A3A"},
+  {n:"H Kelly",    num:"#99",gp:23,pa:57,ab:48,avg:.458,obp:.544,ops:1.294,slg:.750,h:22,b2:9,b3:1,hr:1,rbi:17,r:21,bb:8, so:6, kl:1,hbp:1,sb:16,cs:2,bg:"#E6F1FB",fg:"#0C447C"},
+  {n:"C Davis",    num:"#5", gp:23,pa:59,ab:57,avg:.439,obp:.458,ops:1.019,slg:.561,h:25,b2:3,b3:2,hr:0,rbi:16,r:21,bb:2, so:9, kl:1,hbp:0,sb:23,cs:0,bg:"#E6F1FB",fg:"#0C447C"},
+  {n:"E Merkle",   num:"#8", gp:23,pa:59,ab:53,avg:.415,obp:.475,ops:1.041,slg:.566,h:22,b2:3,b3:1,hr:1,rbi:15,r:21,bb:4, so:4, kl:2,hbp:2,sb:19,cs:0,bg:"#E6F1FB",fg:"#0C447C"},
+  {n:"A Salkowski",num:"#17",gp:23,pa:58,ab:46,avg:.348,obp:.483,ops:.983, slg:.500,h:16,b2:2,b3:1,hr:1,rbi:14,r:21,bb:11,so:11,kl:7,hbp:1,sb:10,cs:0,bg:"#E6F1FB",fg:"#0C447C"},
+  {n:"R Wink",     num:"#10",gp:22,pa:50,ab:31,avg:.452,obp:.653,ops:1.169,slg:.516,h:14,b2:0,b3:1,hr:0,rbi:9, r:24,bb:17,so:4, kl:2,hbp:1,sb:38,cs:1,bg:"#EAF3DE",fg:"#27500A"},
+  {n:"V Fumo",     num:"#2", gp:20,pa:44,ab:29,avg:.310,obp:.523,ops:.937, slg:.414,h:9, b2:0,b3:0,hr:1,rbi:6, r:17,bb:13,so:9, kl:3,hbp:1,sb:19,cs:0,bg:"#EAF3DE",fg:"#27500A"},
+  {n:"C Payton",   num:"#7", gp:22,pa:46,ab:31,avg:.258,obp:.489,ops:.747, slg:.258,h:8, b2:0,b3:0,hr:0,rbi:6, r:14,bb:11,so:12,kl:3,hbp:3,sb:15,cs:1,bg:"#EAF3DE",fg:"#27500A"},
+  {n:"O Dozier",   num:"#4", gp:20,pa:46,ab:38,avg:.289,obp:.413,ops:.834, slg:.421,h:11,b2:2,b3:0,hr:1,rbi:6, r:8, bb:7, so:11,kl:4,hbp:1,sb:12,cs:2,bg:"#EAF3DE",fg:"#27500A"},
+  {n:"A Casmer",   num:"#12",gp:23,pa:49,ab:43,avg:.302,obp:.388,ops:.737, slg:.349,h:13,b2:0,b3:1,hr:0,rbi:9, r:14,bb:5, so:13,kl:3,hbp:1,sb:19,cs:0,bg:"#F1EFE8",fg:"#5A4A3A"},
+  {n:"A Wahi",     num:"#6", gp:21,pa:47,ab:31,avg:.290,obp:.532,ops:.854, slg:.323,h:9, b2:1,b3:0,hr:0,rbi:5, r:18,bb:14,so:9, kl:2,hbp:2,sb:23,cs:2,bg:"#F1EFE8",fg:"#5A4A3A"},
+  {n:"A Ginsberg", num:"#20",gp:22,pa:42,ab:34,avg:.206,obp:.357,ops:.563, slg:.206,h:7, b2:0,b3:0,hr:0,rbi:7, r:7, bb:6, so:16,kl:4,hbp:2,sb:8, cs:1,bg:"#F1EFE8",fg:"#5A4A3A"},
+  {n:"R Bellinder",num:"#1", gp:22,pa:46,ab:40,avg:.100,obp:.217,ops:.342, slg:.125,h:4, b2:1,b3:0,hr:0,rbi:7, r:6, bb:6, so:12,kl:5,hbp:0,sb:8, cs:1,bg:"#F1EFE8",fg:"#5A4A3A"},
 ];
 
-// L5 stats sourced from GameChanger app (G17-G21, May 23-Jun 1)
+// L5 stats sourced from GameChanger app (G19-G23, May 28-Jun 5)
 // b1=singles, b2=doubles, b3=triples, hr=home runs — enables actual SLG calculation
 const L5 = [
-  {n:"H Kelly",    gp:5, pa:13, ab:13, h:4, b1:2, b2:2, b3:0, hr:0, bb:0, hbp:0, kl:0, so:2,  r:2, rbi:5, sb:5, cs:0},
-  {n:"C Davis",    gp:5, pa:16, ab:15, h:4, b1:2, b2:2, b3:0, hr:0, bb:1, hbp:0, kl:1, so:4,  r:4, rbi:0, sb:3, cs:0},
-  {n:"E Merkle",   gp:5, pa:14, ab:11, h:4, b1:4, b2:0, b3:0, hr:0, bb:2, hbp:1, kl:0, so:0,  r:6, rbi:1, sb:7, cs:0},
-  {n:"A Salkowski",gp:5, pa:13, ab:10, h:3, b1:2, b2:1, b3:0, hr:0, bb:3, hbp:0, kl:2, so:3,  r:4, rbi:0, sb:3, cs:0},
-  {n:"R Wink",     gp:5, pa:12, ab:6,  h:3, b1:3, b2:0, b3:0, hr:0, bb:5, hbp:1, kl:0, so:0,  r:4, rbi:0, sb:9, cs:0},
-  {n:"V Fumo",     gp:2, pa:5,  ab:4,  h:0, b1:0, b2:0, b3:0, hr:0, bb:1, hbp:0, kl:2, so:2,  r:1, rbi:0, sb:2, cs:0},
-  {n:"C Payton",   gp:5, pa:12, ab:10, h:2, b1:2, b2:0, b3:0, hr:0, bb:2, hbp:0, kl:1, so:4,  r:0, rbi:0, sb:2, cs:0},
-  {n:"O Dozier",   gp:5, pa:12, ab:9,  h:1, b1:1, b2:0, b3:0, hr:0, bb:3, hbp:0, kl:1, so:2,  r:2, rbi:0, sb:2, cs:0},
-  {n:"A Casmer",   gp:5, pa:12, ab:12, h:4, b1:4, b2:0, b3:0, hr:0, bb:0, hbp:0, kl:0, so:3,  r:1, rbi:3, sb:5, cs:0},
-  {n:"A Wahi",     gp:4, pa:9,  ab:6,  h:1, b1:1, b2:0, b3:0, hr:0, bb:2, hbp:1, kl:0, so:3,  r:1, rbi:2, sb:3, cs:0},
-  {n:"A Ginsberg", gp:5, pa:12, ab:11, h:1, b1:1, b2:0, b3:0, hr:0, bb:1, hbp:0, kl:2, so:6,  r:0, rbi:1, sb:1, cs:0},
-  {n:"R Bellinder",gp:5, pa:12, ab:11, h:1, b1:1, b2:0, b3:0, hr:0, bb:1, hbp:0, kl:1, so:2,  r:1, rbi:0, sb:3, cs:1},
+  {n:"H Kelly",    gp:5, pa:15, ab:15, h:4, b1:1, b2:3, b3:0, hr:0, bb:0, hbp:0, kl:0, so:2,  r:2, rbi:5, sb:5, cs:1},
+  {n:"C Davis",    gp:5, pa:16, ab:15, h:5, b1:3, b2:2, b3:0, hr:0, bb:1, hbp:0, kl:1, so:5,  r:7, rbi:2, sb:6, cs:0},
+  {n:"E Merkle",   gp:5, pa:15, ab:11, h:3, b1:3, b2:0, b3:0, hr:0, bb:3, hbp:1, kl:0, so:0,  r:7, rbi:2, sb:7, cs:0},
+  {n:"A Salkowski",gp:5, pa:15, ab:12, h:5, b1:3, b2:1, b3:1, hr:0, bb:3, hbp:0, kl:2, so:4,  r:4, rbi:1, sb:1, cs:0},
+  {n:"R Wink",     gp:5, pa:14, ab:9,  h:6, b1:5, b2:0, b3:1, hr:0, bb:5, hbp:0, kl:0, so:0,  r:8, rbi:3, sb:12,cs:0},
+  {n:"V Fumo",     gp:4, pa:10, ab:6,  h:0, b1:0, b2:0, b3:0, hr:0, bb:4, hbp:0, kl:2, so:4,  r:4, rbi:0, sb:4, cs:0},
+  {n:"C Payton",   gp:5, pa:13, ab:10, h:1, b1:1, b2:0, b3:0, hr:0, bb:2, hbp:1, kl:0, so:3,  r:0, rbi:0, sb:1, cs:0},
+  {n:"O Dozier",   gp:5, pa:14, ab:11, h:2, b1:2, b2:0, b3:0, hr:0, bb:3, hbp:0, kl:1, so:4,  r:2, rbi:0, sb:3, cs:0},
+  {n:"A Casmer",   gp:5, pa:13, ab:13, h:5, b1:4, b2:0, b3:1, hr:0, bb:0, hbp:0, kl:0, so:5,  r:3, rbi:3, sb:5, cs:0},
+  {n:"A Wahi",     gp:4, pa:10, ab:6,  h:4, b1:4, b2:0, b3:0, hr:0, bb:3, hbp:1, kl:0, so:1,  r:4, rbi:3, sb:4, cs:0},
+  {n:"A Ginsberg", gp:5, pa:12, ab:10, h:2, b1:2, b2:0, b3:0, hr:0, bb:2, hbp:0, kl:2, so:6,  r:1, rbi:1, sb:4, cs:0},
+  {n:"R Bellinder",gp:5, pa:13, ab:12, h:2, b1:1, b2:1, b3:0, hr:0, bb:1, hbp:0, kl:2, so:3,  r:2, rbi:1, sb:4, cs:1},
 ];
 
 const GAMES = [
@@ -267,22 +269,24 @@ const GAMES = [
   {g:19,d:"May 28", res:"L",our:11,opp:14},
   {g:20,d:"May 31", res:"L",our:4, opp:11},
   {g:21,d:"Jun 1",  res:"T",our:7, opp:7},
+  {g:22,d:"Jun 4",  res:"W",our:13,opp:10},
+  {g:23,d:"Jun 5",  res:"L",our:9, opp:10},
 ];
 
 // Batting order by game (0 = DNP)
 const BATTING_ORDER = {
-  "H Kelly":    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
-  "C Davis":    [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,1,1],
-  "E Merkle":   [3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2],
-  "A Salkowski":[2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3],
-  "R Wink":     [6,6,6,6,6,6,6,6,1,6,6,0,7,7,6,6,6,6,6,6,6],
-  "V Fumo":     [7,7,7,9,9,9,9,9,7,9,9,8,1,1,7,7,0,0,0,7,7],
-  "C Payton":   [11,11,12,10,10,10,10,10,8,10,10,9,9,9,9,0,9,9,9,8,8],
-  "O Dozier":   [0,0,8,7,7,7,7,7,0,7,7,6,10,10,10,5,5,5,5,5,5],
-  "A Casmer":   [10,9,11,8,8,8,8,8,6,8,8,7,6,6,8,8,7,7,7,10,9],
-  "A Wahi":     [1,1,1,1,1,1,1,1,0,1,1,1,8,8,1,9,8,8,8,9,0],
-  "A Ginsberg": [9,10,9,12,12,12,12,12,0,12,12,11,11,12,12,11,11,11,11,12,11],
-  "R Bellinder":[8,8,10,11,11,11,11,11,9,11,11,10,0,11,11,10,10,10,10,11,10],
+  "H Kelly":    [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+  "C Davis":    [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,1,1,1,1,1,2,2],
+  "E Merkle":   [3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,3,3],
+  "A Salkowski":[2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,5,5],
+  "R Wink":     [6,6,6,6,6,6,6,6,1,6,6,0,7,7,6,6,6,6,6,6,6,1,1],
+  "V Fumo":     [7,7,7,9,9,9,9,9,7,9,9,8,1,1,7,7,0,0,0,7,7,7,7],
+  "C Payton":   [11,11,12,10,10,10,10,10,8,10,10,9,9,9,9,0,9,9,9,8,8,8,8],
+  "O Dozier":   [0,0,8,7,7,7,7,7,0,7,7,6,10,10,10,5,5,5,5,5,5,6,6],
+  "A Casmer":   [10,9,11,8,8,8,8,8,6,8,8,7,6,6,8,8,7,7,7,10,9,9,9],
+  "A Wahi":     [1,1,1,1,1,1,1,1,0,1,1,1,8,8,1,9,8,8,8,9,0,10,10],
+  "A Ginsberg": [9,10,9,12,12,12,12,12,0,12,12,11,11,12,12,11,11,11,11,12,11,12,12],
+  "R Bellinder":[8,8,10,11,11,11,11,11,9,11,11,10,0,11,11,10,10,10,10,11,10,11,11],
 };
 
 // ── HELPERS ──
@@ -358,7 +362,7 @@ const ct_l5avg = ct_ab>0 ? ct_h/ct_ab : 0;
 const ct_l5obp = (ct_ab+ct_bb+ct_hbp)>0 ? (ct_h+ct_bb+ct_hbp)/(ct_ab+ct_bb+ct_hbp) : 0;
 const ct_l5slg = ct_ab>0 ? ct_tb/ct_ab : 0;
 const ct_l5ops = ct_l5obp + ct_l5slg;
-const ct_savg=.329, ct_sobp=.465, ct_sops=.892;
+const ct_savg=.333, ct_sobp=.464, ct_sops=.901;
 const ct_avgD = ct_l5avg - ct_savg;
 const ct_obpD = ct_l5obp - ct_sobp;
 const ct_opsD = ct_l5ops - ct_sops;
@@ -374,7 +378,7 @@ compTeamTr.innerHTML = `
   <td style="background:#F0F0F0;font-weight:700;color:${avgColor(ct_l5avg)};">${fmt(ct_l5avg)}</td>
   <td style="background:#F0F0F0;font-weight:700;">${fmt(ct_l5obp)}</td>
   <td style="background:#F0F0F0;font-weight:700;">${fmt(ct_l5ops)}</td>
-  <td style="background:#F0F0F0;font-weight:700;">21</td>
+  <td style="background:#F0F0F0;font-weight:700;">23</td>
   <td style="background:#F0F0F0;font-weight:700;color:#27500A;">${fmt(ct_savg)}</td>
   <td style="background:#F0F0F0;font-weight:700;">${fmt(ct_sobp)}</td>
   <td style="background:#F0F0F0;font-weight:700;">${fmt(ct_sops)}</td>
@@ -451,27 +455,27 @@ seasonSorted.forEach(s=>{
 // Team row
 const teamTr = document.createElement('tr');
 teamTr.innerHTML=`<td class="left" style="background:#F0F0F0;font-weight:700;color:#1A3A6B;">TEAM</td>
+  <td style="background:#F0F0F0;font-weight:700;">23</td>
+  <td style="background:#F0F0F0;font-weight:700;">603</td>
+  <td style="background:#F0F0F0;font-weight:700;color:#0C447C;">${(603/23).toFixed(1)}</td>
+  <td style="background:#F0F0F0;font-weight:700;">481</td>
+  <td style="background:#F0F0F0;font-weight:700;color:#27500A;">.333</td>
+  <td style="background:#F0F0F0;font-weight:700;">.464</td>
+  <td style="background:#F0F0F0;font-weight:700;">.437</td>
+  <td style="background:#F0F0F0;font-weight:700;color:#1A3A6B;">.901</td>
+  <td style="background:#F0F0F0;font-weight:700;">160</td>
   <td style="background:#F0F0F0;font-weight:700;">21</td>
-  <td style="background:#F0F0F0;font-weight:700;">538</td>
-  <td style="background:#F0F0F0;font-weight:700;color:#0C447C;">${(538/21).toFixed(1)}</td>
-  <td style="background:#F0F0F0;font-weight:700;">426</td>
-  <td style="background:#F0F0F0;font-weight:700;color:#27500A;">.329</td>
-  <td style="background:#F0F0F0;font-weight:700;">.465</td>
-  <td style="background:#F0F0F0;font-weight:700;">.427</td>
-  <td style="background:#F0F0F0;font-weight:700;color:#1A3A6B;">.892</td>
-  <td style="background:#F0F0F0;font-weight:700;">140</td>
-  <td style="background:#F0F0F0;font-weight:700;">19</td>
-  <td style="background:#F0F0F0;font-weight:700;">4</td>
+  <td style="background:#F0F0F0;font-weight:700;">7</td>
   <td style="background:#F0F0F0;font-weight:700;">5</td>
-  <td style="background:#F0F0F0;font-weight:700;">105</td>
-  <td style="background:#F0F0F0;font-weight:700;">170</td>
-  <td style="background:#F0F0F0;font-weight:700;">94</td>
-  <td style="background:#F0F0F0;font-weight:700;">105</td>
-  <td style="background:#F0F0F0;font-weight:700;">36</td>
+  <td style="background:#F0F0F0;font-weight:700;">117</td>
+  <td style="background:#F0F0F0;font-weight:700;">192</td>
+  <td style="background:#F0F0F0;font-weight:700;">104</td>
+  <td style="background:#F0F0F0;font-weight:700;">116</td>
+  <td style="background:#F0F0F0;font-weight:700;">37</td>
   <td style="background:#F0F0F0;font-weight:700;">15</td>
-  <td style="background:#F0F0F0;font-weight:700;">188</td>
-  <td style="background:#F0F0F0;font-weight:700;">9</td>
-  <td style="background:#F0F0F0;font-weight:700;">95.4%</td>`;
+  <td style="background:#F0F0F0;font-weight:700;">210</td>
+  <td style="background:#F0F0F0;font-weight:700;">10</td>
+  <td style="background:#F0F0F0;font-weight:700;">95.5%</td>`;
 seasonBody.appendChild(teamTr);
 
 // ── L5 TABLE (sorted by OPS desc) ──
@@ -608,7 +612,7 @@ const playerNames = SEASON.map(s=>s.n);
 //   Spot 8    — Bridge: best of the bottom-3 blended (breaks up consecutive weak bats).
 //   Spot 10   — 3rd-best of remaining 6 (pushed down to avoid 3 weak bats together).
 //   Spots 11–12 — Bottom by blended.
-// Blended score = 0.40×season OBP + 0.35×season OPS + 0.25×L5 OPS
+// Blended score = 0.30×season OBP + 0.35×season OPS + 0.35×L5 OPS
 // Leadoff score = season OBP + min(season SB, 30)/300  (small speed nudge)
 function buildLineupRec() {
   const pool = SEASON.map((s, i) => {
@@ -618,7 +622,7 @@ function buildLineupRec() {
       obp:         s.obp,
       ops:         s.ops,
       l5ops:       l5ops_val,
-      blended:     0.40*s.obp + 0.35*s.ops + 0.25*l5ops_val,
+      blended:     0.30*s.obp + 0.35*s.ops + 0.35*l5ops_val,
       leadoffScore:s.obp + Math.min(s.sb, 30)/300,
     };
   });
@@ -691,18 +695,18 @@ playersSortedByRec.forEach(pName=>{
 
 // ── HITTING STREAKS TABLE ──
 const HITS_BY_GAME = {
-  "H Kelly":    [2,0,1,1,0,2,1,0,2,1,0,2,2,1,1,0,1,1,1,0,1],
-  "C Davis":    [1,2,1,0,0,1,1,0,2,1,1,2,1,1,3,2,0,1,1,1,1],
-  "E Merkle":   [0,2,2,1,1,2,1,0,1,1,0,2,2,0,2,1,1,0,0,1,2],
-  "A Salkowski":[0,1,1,2,0,1,0,0,0,1,1,1,2,0,0,0,0,1,1,0,1],
-  "R Wink":     [1,1,1,1,1,0,0,0,0,0,1,null,0,0,1,0,0,1,0,0,2],
-  "V Fumo":     [0,0,0,1,1,0,0,1,2,1,0,1,0,0,1,1,null,null,null,0,0],
-  "C Payton":   [0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,null,1,0,1,0,0],
-  "O Dozier":   [null,null,1,1,0,0,2,0,null,1,1,0,0,1,2,0,0,0,1,0,0],
-  "A Casmer":   [0,0,0,0,0,0,0,1,1,2,1,1,0,1,0,0,1,0,1,0,2],
-  "A Wahi":     [0,0,2,1,0,0,0,0,null,0,0,2,0,0,0,0,0,0,1,0,null],
-  "A Ginsberg": [0,0,0,1,0,0,0,0,null,1,0,2,0,0,0,0,0,1,0,0,0],
-  "R Bellinder":[0,0,1,0,0,0,0,0,0,0,0,1,null,0,0,0,0,0,0,1,0],
+  "H Kelly":    [2,0,1,1,0,2,1,0,2,1,0,2,2,1,1,0,1,1,1,0,1,1,1],
+  "C Davis":    [1,2,1,0,0,1,1,0,2,1,1,2,1,1,3,2,0,1,1,1,1,1,1],
+  "E Merkle":   [0,2,2,1,1,2,1,0,1,1,0,2,2,0,2,1,1,0,0,1,2,0,0],
+  "A Salkowski":[0,1,1,2,0,1,0,0,0,1,1,1,2,0,0,0,0,1,1,0,1,3,0],
+  "R Wink":     [1,1,1,1,1,0,0,0,0,0,1,null,0,0,1,0,0,1,0,0,2,2,2],
+  "V Fumo":     [0,0,0,1,1,0,0,1,2,1,0,1,0,0,1,1,null,null,null,0,0,0,0],
+  "C Payton":   [0,0,0,1,1,0,0,1,1,0,0,2,0,0,0,null,1,0,1,0,0,0,0],
+  "O Dozier":   [null,null,1,1,0,0,2,0,null,1,1,0,0,1,2,0,0,0,1,0,0,1,0],
+  "A Casmer":   [0,0,0,0,0,0,0,1,1,2,1,1,0,1,0,0,1,0,1,0,2,1,1],
+  "A Wahi":     [0,0,2,1,0,0,0,0,null,0,0,2,0,0,0,0,0,0,1,0,null,2,1],
+  "A Ginsberg": [0,0,0,1,0,0,0,0,null,1,0,2,0,0,0,0,0,1,0,0,0,1,1],
+  "R Bellinder":[0,0,1,0,0,0,0,0,0,0,0,1,null,0,0,0,0,0,0,1,0,0,1],
 };
 
 const streakHead = document.getElementById('streakHead');
@@ -767,10 +771,10 @@ new Chart(document.getElementById('runsChart'),{
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,labels:{font:{size:9}}}},scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}
 });
 
-const f16avg = runsScored.slice(0,16).reduce((a,b)=>a+b,0)/16;
-const l5avg  = runsScored.slice(16).reduce((a,b)=>a+b,0)/5;
+const f18avg = runsScored.slice(0,18).reduce((a,b)=>a+b,0)/18;
+const l5avg  = runsScored.slice(18).reduce((a,b)=>a+b,0)/5;
 document.getElementById('runsSplitNote').innerHTML =
-  `<b>Split:</b> G1–G16 avg <b>${f16avg.toFixed(1)} R/G</b> &nbsp;|&nbsp; G17–G21 (Last 5) avg <b style="color:#C0392B;">${l5avg.toFixed(1)} R/G</b> &mdash; scoring dropped <b>${(f16avg - l5avg).toFixed(1)} runs/game</b> over the last 5 games.`;
+  `<b>Split:</b> G1–G18 avg <b>${f18avg.toFixed(1)} R/G</b> &nbsp;|&nbsp; G19–G23 (Last 5) avg <b>${l5avg.toFixed(1)} R/G</b> &mdash; ${f18avg > l5avg ? 'scoring dropped <b>' + (f18avg-l5avg).toFixed(1) + ' runs/game</b>' : 'scoring up <b style="color:#27500A;">' + (l5avg-f18avg).toFixed(1) + ' runs/game</b>'} vs the first 18 games.`;
 
 // AVG chart — sorted by season AVG descending
 const avgSortIdx = [...Array(SEASON.length).keys()].sort((a,b)=>SEASON[b].avg-SEASON[a].avg);
